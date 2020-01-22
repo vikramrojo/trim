@@ -1,0 +1,34 @@
+{
+  "name": "trim-css",
+  "version": "0.0.1",
+  "author": "atav1k",
+  "description": "A props based CSS framework.",
+  "main": "dist/trim.css",
+  "scripts": {
+    "postcss": "postcss ./src/trim.css -d dist/",
+    "build": "rimraf dist/* && yarn postcss && cross-env NODE_ENV=production yarn postcss --ext .min.css && gzip -c dist/trim.min.css  | wc -c | xargs echo 'Size:'",
+    "pub": "npm run build && npm publish"
+  },
+  "keywords": [
+    "css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atav1k/trim"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atav1k/trim/issues"
+  },
+  "homepage": "https://trim.com",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cross-env": "^5.2.0",
+    "cssnano": "^4.1.7",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.3",
+    "postcss-csso": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "rimraf": "^3.0.0"
+  }
+}
