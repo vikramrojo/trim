@@ -1,0 +1,36 @@
+[chip] {
+  font-size: var(--chip-font-size);
+  color: var(--color, --chip-color);
+  background-color: var(--bg, var(--gray-1));
+  border-radius: var(--chip-border-radius);
+  border: 2px solid var(--border, var(--gray-5));
+  padding: var(--chip-padding);
+  vertical-align: baseline;
+  display: inline-block;
+  transition: var(--chip-speed) all;
+  font-weight: var(--chip-weight);
+}
+
+[chip]:empty {
+  display: none;
+}
+
+a[chip]:hover {
+  color: var(--chip-color);
+  background-image: linear-gradient(var(--darken), var(--darken));
+  text-decoration: none;
+  --chip-border-color: var(--chip-link-color);
+}
+
+a[chip]:focus {
+  outline: none;
+  box-shadow: var(--chip-focus);
+}
+
+[chip][type="primary"] { --bg: var(--component-primary); --border: var(--component-primary); --color: white}
+[chip][type="secondary"] { --bg: var(--component-secondary); --border: var(--component-secondary); --color: white}
+[chip][type="success"] { --bg: var(--component-success); --border: var(--component-success); --color: white}
+[chip][type="info"] { --bg: var(--component-info); --border: var(--component-info); --color: white}
+[chip][type="warning"] { --bg: var(--component-warning); --border: var(--component-warning); --color: white}
+[chip][type="danger"] { --bg: var(--component-danger); --border: var(--component-danger); --color: white}
+[chip][type="disabled"] { --bg: var(--component-disabled); --border: var(--component-disabled); --color: white}

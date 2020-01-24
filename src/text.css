@@ -72,3 +72,32 @@ p {
 small {
   font-size: var(--font-size-small);
 }
+
+ul {
+  line-height: var(--body-line-height);
+}
+
+[tooltip] {
+  display: inline-block;
+  position: relative;
+  border-bottom: 0.0625rem dashed var(--component-border-color);
+  cursor: grab;
+}
+
+[tooltip]:hover > [tip] {
+  display: block;
+}
+
+[tooltip] [tip] {
+  display: none;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: var(--tooltip-min-width);
+  padding: var(--tooltip-padding);
+  color: var(--tooltip-color);
+  text-align: center;
+  background: var(--tooltip-bg-color);
+  border-radius: var(--tooltip-border-radius);
+}

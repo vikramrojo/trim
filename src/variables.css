@@ -59,12 +59,99 @@
   --yellow: #f59f00;
   --orange: #f76707;
 
+  /* Modifiers */
+  --darken: rgba(0, 0, 0, 0.1);
+  --darken-more: rgba(0, 0, 0, 0.5);
+  --lighten: rgba(255, 255, 255, 0.1);
+  --lighten-more: rgba(255, 255, 255, 0.5);
+  --shadow: rgba(80, 80, 80, 0.1);
+  --shadow-more: rgba(80, 80, 80, 0.5);
+  
+  /* Components */
+  --component-bg-color: var(--gray-1);
+  --component-border-color: var(--gray-6);
+  --component-border-radius: 0.125rem;
+  --component-border-width: 0.0625rem;
+  --component-focus: 0 0 0.125rem 0.125rem var(--gray-3);
+  --component-speed: 0.1s;
+  --component-shadow: var(--shadow);
+  --component-margin-bottom: initial;
+  --component-padding: 0.5rem 0.75rem;
+  --component-primary: var(--indigo);
+  --component-secondary: var(--violet);
+  --component-success: var(--green);
+  --component-info: var(--cyan);
+  --component-warning: var(--orange);
+  --component-danger: var(--red);
+  --component-disabled: var(--gray-4);
+  --bg: initial;
+  --color: initial;
+  --border: initial;
+
+  /* Alert */
+  --alert-border-radius: var(--component-border-radius);
+  --alert-padding: 0.75rem;
+  --alert-color: var(--gray-9);
+
+
+  /* Button */
+  --button-font-size: var(--fonts-3);
+  --button-font-family: inherit;
+  --button-font-weight: inherit;
+  --button-border-radius: var(--component-border-radius);
+  --button-border-width: var(--component-border-width);
+  --button-focus: var(--component-focus);
+  --button-speed: var(--component-speed);
+  --button-padding: 0.75rem 1rem;
+
+  /* Chip */
+  --chip-border-radius: 2rem;
+  --chip-color: var(--gray-7);
+  --chip-focus: var(--component-focus);
+  --chip-font-size: 0.75rem;
+  --chip-link-color: var(--link-color);
+  --chip-speed: var(--component-speed);
+  --chip-padding: 0.25rem 0.5rem;
+  --chip-weight: var(--font-weight-medium);
+
+  /* Input */
+  --input-font-size: var(--component-font-size);
+  --input-font-family: inherit;
+  --input-font-weight: inherit;
+  --input-color: var(--body-color);
+  --input-border-color: var(--component-border-color);
+  --input-border-width: 0.0625rem;
+  --input-border-radius: var(--component-border-radius);
+  --input-bg-color: var(--white);
+  --input-readonly-bg-color: var(--component-bg-color);
+  --input-focus-color: var(--component-primary);
+  --input-padding: var(--component-padding);
+
+  /* Tab */
+  --tab-color: initial;
+  --tab-border-color: initial;
+  --tab-border-radius: var(--component-border-radius);
+  --tab-border: 0.125rem;
+  --tab-font-size: var(--fonts-3);
+  --tab-padding: 0.75rem 1rem;
+
+  /* Table */
+  --table-bg-color: var(--white);
+  --table-border-color: var(--component-border-color);
+  --table-border-width: var(--component-border-width);
+  --table-header-bg-color: transparent;
+  --table-spacing-x: 0.75rem;
+  --table-spacing-y: 0.5rem;
+  --table-hover-color: var(--white);
+  --table-hover-bg-color: initial;
+  --table-stripe-bg-color: var(--component-bg-color);
+
   /* Text */
   --body-font-size: var(--fonts-3);
   --body-bg-color: var(--white);
   --body-color: var(--black);
   --body-color-muted: var(--gray6);
-  --body-line-height: 1.25rem;
+  --body-line-height: 1.25;
   --code-font-size: var(--fonts-3);
   --code-color: var(--gray8);
   --font-sans-serif: sans-serif;
@@ -97,4 +184,11 @@
   --pre-max-height: none;
   --selection-color: var(--white);
   --selection-bg-color: var(--state-primary);
+
+  /* Tooltip */
+  --tooltip-color: var(--white);
+  --tooltip-bg-color: var(--gray-6);
+  --tooltip-border-radius: var(--component-border-radius);
+  --tooltip-min-width: 8rem;
+  --tooltip-padding: 0.5rem;
 }
