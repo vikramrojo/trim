@@ -1,6 +1,6 @@
 {
   "name": "trim-css",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "atav1k",
   "description": "A props based CSS framework.",
   "main": "dist/trim.css",
