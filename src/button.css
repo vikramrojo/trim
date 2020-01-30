@@ -47,83 +47,83 @@ button:disabled,
   cursor: not-allowed;
 }
 
-button[type*="outline"],
-[button][type*="outline"] {
-  border-color: var(--button-bg-color, var(--state-primary));
+button[type*='outline'],
+[button][type*='outline'] {
+  border-color: var(--button-bg-color, var(--component-primary));
   background-color: transparent;
   color: var(--button-color, var(--link-color));
 }
 
-button[type*="outline"]:hover,
-[button][type*="outline"]:hover,
-button[type*="outline"]:focus,
-[button][type*="outline"]:focus {
+button[type*='outline']:hover,
+[button][type*='outline']:hover,
+button[type*='outline']:focus,
+[button][type*='outline']:focus {
   background-image: none;
   text-decoration: var(--link-text-decoration-hover);
 }
 
-button[type*="link"],
-[button][type*="link"] {
+button[type*='link'],
+[button][type*='link'] {
   border-color: transparent;
   background-color: transparent;
   color: var(--link-color);
   text-decoration: var(--link-text-decoration);
 }
 
-button[type*="link"]:hover,
-[button][type*="link"]:hover,
-button[type*="link"]:focus,
-[button][type*="link"]:focus {
+button[type*='link']:hover,
+[button][type*='link']:hover,
+button[type*='link']:focus,
+[button][type*='link']:focus {
   border-color: transparent;
   background-image: none;
   color: var(--link-color-hover);
   text-decoration: var(--link-text-decoration-hover);
 }
 
-button[type*="primary"],
-[button][type*="primary"] {
+button[type*='primary'],
+[button][type*='primary'] {
   --border: var(--component-primary);
   --bg: var(--component-primary);
   --color: white;
 }
 
-button[type*="secondary"],
-[button][type*="secondary"] {
+button[type*='secondary'],
+[button][type*='secondary'] {
   --border: var(--component-secondary);
   --bg: var(--component-secondary);
   --color: white;
 }
 
-button[type*="success"],
-[button][type*="success"] {
+button[type*='success'],
+[button][type*='success'] {
   --border: var(--component-success);
   --bg: var(--component-success);
   --color: white;
 }
 
-button[type*="info"],
-[button][type*="info"] {
+button[type*='info'],
+[button][type*='info'] {
   --border: var(--component-info);
   --bg: var(--component-info);
   --color: white;
 }
 
-button[type*="warning"],
-[button][type*="warning"] {
+button[type*='warning'],
+[button][type*='warning'] {
   --border: var(--component-warning);
   --bg: var(--component-warning);
   --color: white;
 }
 
-button[type*="danger"],
-[button][type*="danger"] {
+button[type*='danger'],
+[button][type*='danger'] {
   --border: var(--component-danger);
   --bg: var(--component-danger);
   --color: white;
 }
 
-button[type*="disabled"],
-[button][type*="disabled"] {
+button[type*='disabled'],
+[button][type*='disabled'] {
   --border: var(--component-disabled);
   --bg: var(--component-disabled);
   --color: white;
