@@ -5,7 +5,7 @@
 [tab] > a {
   padding: var(--tab-padding);
   flex: 0 1 auto;
-  border-bottom: var(--tab-border) var(--tab-border-color, var(--component-primary)) solid;
+  border-bottom: var(--tab-border) var(--border, var(--tab-border-color)) solid;
   text-align: center;
   text-decoration: none;
   color: var(--color, var(--tab-color));
@@ -15,12 +15,12 @@
 }
 
 [tab] > a:hover {
-  border-color: var(--tab-border-color, var(--component-primary));
+  border-color: var(--border, var(--tab-border-color));
   text-decoration: none;
 }
 
 [tab] > a.active {
-  border-color: var(--tab-border-color, var(--component-primary));
+  border-color: var(--border, var(--tab-border-color));
   color: var(--tab-color, var(--component-primary));
 }
 
@@ -34,6 +34,6 @@
 }
 
 [tab][type*="simple"] > a.active {
-  background-color: var(--tab-border-color, var(--component-primary));
+  background-color: var(--bg, var(--tab-border-color));
   color: white;
 }

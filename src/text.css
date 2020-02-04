@@ -1,5 +1,5 @@
 body {
-  background: var(--body-bg-color);
+  background-color: var(--bg, var(--body-bg-color));
   font-family: var(--font-family);
   font-weight: var(--font-weight);
   font-size: var(--body-font-size);
@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--color, var(--link-color));
   text-decoration: var(--link-text-decoration);
 }
 
@@ -31,7 +31,7 @@ code,
 .code {
   font-family: var(--font-monospace);
   font-size: var(--code-font-size);
-  color: var(--code-color);
+  color: var(--color, var(--code-color));
 }
 
 h1,h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -41,7 +41,7 @@ h1,h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--headings-font-family);
-  color: var(--headings-color);
+  color: var(--color, var(--headings-color));
   margin-bottom: var(--headings-margin-bottom);
 }
 
@@ -96,8 +96,8 @@ ul {
   transform: translateX(-50%);
   min-width: var(--tooltip-min-width);
   padding: var(--tooltip-padding);
-  color: var(--tooltip-color);
+  color: var(--color, var(--tooltip-color));
   text-align: center;
-  background: var(--tooltip-bg-color);
+  background-color: var(--bg, var(--tooltip-bg-color));
   border-radius: var(--tooltip-border-radius);
 }

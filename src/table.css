@@ -1,6 +1,6 @@
 table {
   width: 100%;
-  background-color: var(--table-bg-color);
+  background-color: var(--bg, var(--table-bg-color));
   border-collapse: collapse;
   margin-bottom: 1.5rem;
 }
@@ -15,7 +15,7 @@ table caption {
 
 table th {
   text-align: left;
-  background-color: var(--table-header-bg-color);
+  background-color: var(--bg, var(--table-header-bg-color));
   border-bottom: solid var(--table-border-width) var(--table-border-color);
   padding: var(--table-spacing-y) var(--table-spacing-x);
 }
@@ -32,7 +32,7 @@ table[type*='bordered'] {
 table[type*='bordered'] td {
   border-style: solid;
   border-width: var(--table-border-width);
-  border-color: var(--table-border-color);
+  border-color: var(--border, var(--table-border-color));
 }
 
 table[type*='hover'] tr:hover td {

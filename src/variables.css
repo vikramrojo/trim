@@ -128,7 +128,7 @@
 
   /* Tab */
   --tab-color: initial;
-  --tab-border-color: initial;
+  --tab-border-color: var(--component-primary);
   --tab-border-radius: var(--component-border-radius);
   --tab-border: 0.125rem;
   --tab-font-size: var(--fonts-3);
@@ -172,7 +172,7 @@
   --headings-margin-bottom: var(--space-6);
   --hr-border-width: 1px;
   --hr-border-color: var(--gray6);
-  --link-color: var(--indigo);
+  --link-color: var(--component-primary);
   --link-text-decoration: none;
   --link-color-hover: var(--link-color);
   --link-text-decoration-hover: underline;

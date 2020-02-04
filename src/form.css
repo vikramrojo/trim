@@ -15,7 +15,7 @@ fieldset:last-child {
 }
 
 label {
-  color: var(--label-color);
+  color: var(--color, var(--label-color));
   display: inline-block;
   margin-bottom: 0.25rem;
 }
@@ -28,10 +28,10 @@ textarea[type="text"] {
   font-family: var(--input-font-family);
   font-size: var(--input-font-size);
   font-weight: var(--input-font-weight);
-  color: var(--input-color);
+  color: var(--color, var(--input-color));
   border: solid var(--input-border-width) var(--input-border-color);
   border-radius: var(--input-border-radius);
-  background-color: var(--input-bg-color);
+  background-color: var(--bg, var(--input-bg-color));
   line-height: var(--line-height);
   display: block;
   padding: var(--input-padding);

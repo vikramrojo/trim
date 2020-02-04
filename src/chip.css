@@ -1,6 +1,6 @@
 [chip] {
   font-size: var(--chip-font-size);
-  color: var(--color, --chip-color);
+  color: var(--color, var(--chip-color));
   background-color: var(--bg, var(--gray-1));
   border-radius: var(--chip-border-radius);
   border: 2px solid var(--border, var(--gray-5));
