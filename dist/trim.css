@@ -1137,6 +1137,54 @@ ul {
 
 [shadow*='4'] { box-shadow: 0 0.5rem 0.5rem var(--component-shadow); }
 
+[flex] { display: -webkit-box; display: flex; }
+
+[flex*="wrap"] { flex-wrap: wrap; }
+
+[flex*="wrapReverse"] { flex-wrap: wrap-reverse; }
+
+[flex*="column"] { -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; }
+
+[flex*="row"] { -webkit-box-orient: horizontal; -webkit-box-direction: normal; flex-direction: row; }
+
+[flex][justify="center"] { -webkit-box-pack: center; justify-content: center; }
+
+[flex][justify="around"] { justify-content: space-around; }
+
+[flex][justify="between"] { -webkit-box-pack: justify; justify-content: space-between; }
+
+[flex][justify="evenly"] { -webkit-box-pack: space-evenly; justify-content: space-evenly; }
+
+[flex][justify="end"] { -webkit-box-pack: end; justify-content: flex-end; }
+
+[flex][align="baseline"] { -webkit-box-align: baseline; align-items: baseline; }
+
+[flex][align="end"] { -webkit-box-align: end; align-items: flex-end; }
+
+[flex][align="start"] { -webkit-box-align: start; align-items: flex-start; }
+
+[flex][align="center"] { -webkit-box-align: center; align-items: center; }
+
+[flex] > [grow] { flex-basis: 0; }
+
+[flex] > [grow="1"] { -webkit-box-flex: 1; flex-grow: 1; }
+
+[flex] > [grow="2"] { -webkit-box-flex: 2; flex-grow: 2; }
+
+[flex] > [grow="3"] { -webkit-box-flex: 3; flex-grow: 3; }
+
+[flex] > [grow="4"] { -webkit-box-flex: 4; flex-grow: 4; }
+
+[flex] > [grow="5"] { -webkit-box-flex: 5; flex-grow: 5; }
+
+[flex] > [grow="6"] { -webkit-box-flex: 6; flex-grow: 6; }
+
+[flex] > [self="center"] { align-self: center; }
+
+[flex] > [self="start"] { align-self: flex-start; }
+
+[flex] > [self="end"] { align-self: flex-end; }
+
 [m^='0'] { margin: 0; }
 
 [m^='1'] { margin: var(--space-1); }

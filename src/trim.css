@@ -15,5 +15,6 @@
 
 /* Utilities */
 @import url("./color.css");
+@import url("./flex.css");
 @import url('./position.css');
 @import url('./media.css');
