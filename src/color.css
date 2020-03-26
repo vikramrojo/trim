@@ -75,7 +75,7 @@
 [border*='orange'] { border-color: var(--orange); }
 
 [shadow*='0'] { box-shadow: none; }
-[shadow*='1'] { box-shadow: 0 0.625rem 0.625rem var(--component-shadow); }
+[shadow*='1'] { box-shadow: 0 0.0625rem 0.625rem var(--component-shadow); }
 [shadow*='2'] { box-shadow: 0 0.125rem 0.125rem var(--component-shadow); }
 [shadow*='3'] { box-shadow: 0 0.25rem 0.25rem var(--component-shadow); }
 [shadow*='4'] { box-shadow: 0 0.5rem 0.5rem var(--component-shadow); }
