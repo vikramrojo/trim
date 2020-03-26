@@ -1,0 +1,27 @@
+[alert] {
+  color: var(--alert-color, black);
+  background-color: var(--bg, var(--component-primary));
+  border-radius: var(--alert-border-radius);
+  padding: var(--alert-padding);
+  margin-top: 0;
+  margin-bottom: var(--component-margin-bottom, 0);
+  background-image: linear-gradient(var(--darken), var(--darken));
+  display: block;
+}
+
+[alert]:empty {
+  display: none;
+}
+
+a[alert] {
+  color: var(--alert-color, black);
+  display: inline-block;
+}
+
+[alert][type="primary"] { --bg: var(--component-primary); }
+[alert][type="secondary"] { --bg: var(--component-secondary); }
+[alert][type="success"] { --bg: var(--component-success); }
+[alert][type="info"] { --bg: var(--component-info); }
+[alert][type="warning"] { --bg: var(--component-warning); }
+[alert][type="danger"] { --bg: var(--component-danger); }
+[alert][type="disabled"] { --bg: var(--component-disabled); }

@@ -1,0 +1,103 @@
+body {
+  background-color: var(--bg, var(--body-bg-color));
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: var(--body-font-size);
+  color: var(--body-color);
+  line-height: var(--line-height);
+}
+
+a {
+  color: var(--color, var(--link-color));
+  text-decoration: var(--link-text-decoration);
+}
+
+a:hover {
+  color: var(--link-color-hover);
+  text-decoration: var(--link-text-decoration-hover);
+}
+
+a[disabled] {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+b, .b {
+  font-weight: var(--font-weight-bold);
+}
+
+code,
+.code {
+  font-family: var(--font-monospace);
+  font-size: var(--code-font-size);
+  color: var(--color, var(--code-color));
+}
+
+h1,h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: var(--headings-font-weight);
+  line-height: var(--headings-line-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headings-font-family);
+  color: var(--color, var(--headings-color));
+  margin-bottom: var(--headings-margin-bottom);
+}
+
+h1, .h1 { font-size: var(--h1);}
+h2, .h2 { font-size: var(--h2);}
+h3, .h3 { font-size: var(--h3);}
+h4, .h4 { font-size: var(--h4);}
+h5, .h5 { font-size: var(--h5);}
+h6, .h6 { font-size: var(--h6);}
+
+hr {
+  border: none;
+  border-top: solid var(--hr-border-width) var(--hr-border-color);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--p-margin-bottom);
+  line-height: var(--body-line-height);
+}
+
+small {
+  font-size: var(--font-size-small);
+}
+
+ul {
+  line-height: var(--body-line-height);
+}
+
+[tooltip] {
+  display: inline-block;
+  position: relative;
+  border-bottom: 0.0625rem dashed var(--component-border-color);
+  cursor: grab;
+}
+
+[tooltip]:hover > [tip] {
+  display: block;
+}
+
+[tooltip] [tip] {
+  display: none;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: var(--tooltip-min-width);
+  padding: var(--tooltip-padding);
+  color: var(--color, var(--tooltip-color));
+  text-align: center;
+  background-color: var(--bg, var(--tooltip-bg-color));
+  border-radius: var(--tooltip-border-radius);
+}

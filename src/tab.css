@@ -1,0 +1,39 @@
+[tab] {
+  display: flex;
+}
+
+[tab] > a {
+  padding: var(--tab-padding);
+  flex: 0 1 auto;
+  border-bottom: var(--tab-border) var(--border, var(--tab-border-color)) solid;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color, var(--tab-color));
+  font-size: var(--tab-font-size);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+[tab] > a:hover {
+  border-color: var(--border, var(--tab-border-color));
+  text-decoration: none;
+}
+
+[tab] > a.active {
+  border-color: var(--border, var(--tab-border-color));
+  color: var(--tab-color, var(--component-primary));
+}
+
+[tab][type*="full"] > a {
+  flex: 1;
+}
+
+[tab][type*="simple"] > a {
+  border: none;
+  border-radius: var(--tab-border-radius);
+}
+
+[tab][type*="simple"] > a.active {
+  background-color: var(--bg, var(--tab-border-color));
+  color: white;
+}
