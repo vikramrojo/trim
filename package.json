@@ -22,13 +22,13 @@
   },
   "homepage": "https://trim.com",
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
+    "autoprefixer": "^10.4.16",
     "cross-env": "^5.2.0",
-    "cssnano": "^4.1.7",
+    "cssnano": "^6.0.2",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.3",
-    "postcss-csso": "^3.0.0",
-    "postcss-import": "^12.0.1",
+    "postcss-cli": "^11.0.0",
+    "postcss-csso": "^6.0.1",
+    "postcss-import": "^15.1.0",
     "rimraf": "^3.0.0"
   }
 }
