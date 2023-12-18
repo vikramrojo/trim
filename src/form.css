@@ -20,10 +20,10 @@ label {
   margin-bottom: 0.25rem;
 }
 
-input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
+input:not([data-type="checkbox"]):not([data-type="radio"]):not([data-type="submit"]):not([data-type="color"]):not([data-type="button"]):not([data-type="reset"]),
 select,
 textarea,
-textarea[type="text"] {
+textarea[data-type="text"] {
   width: 100%;
   font-family: var(--input-font-family);
   font-size: var(--input-font-size);
@@ -41,35 +41,35 @@ textarea[type="text"] {
   appearance: none;
 }
 
-input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]):focus,
+input:not([data-type="checkbox"]):not([data-type="radio"]):not([data-type="submit"]):not([data-type="color"]):not([data-type="button"]):not([data-type="reset"]):focus,
 select:focus,
 textarea:focus,
-textarea[type="text"]:focus {
+textarea[data-type="text"]:focus {
   outline: none;
   border-color: var(--input-focus-color);
 }
 
-input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"])[disabled],
-select[disabled],
-textarea[disabled],
-textarea[type="text"][disabled] {
+input:not([data-type="checkbox"]):not([data-type="radio"]):not([data-type="submit"]):not([data-type="color"]):not([data-type="button"]):not([data-type="reset"])[data-disabled],
+select[data-disabled],
+textarea[data-disabled],
+textarea[data-type="text"][data-disabled] {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"])[readonly],
-select[readonly],
-textarea[readonly],
-textarea[type="text"][readonly] {
+input:not([data-type="checkbox"]):not([data-type="radio"]):not([data-type="submit"]):not([data-type="color"]):not([data-type="button"]):not([data-type="reset"])[data-readonly],
+select[data-readonly],
+textarea[data-readonly],
+textarea[data-type="text"][data-readonly] {
   background-color: var(--input-readonly-bg-color);
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[data-type="checkbox"],
+input[data-type="radio"] {
   vertical-align: 0.0625rem;
 }
 
-input[type="file"] {
+input[data-type="file"] {
   padding-top: 0;
   padding-bottom: 0;
 }

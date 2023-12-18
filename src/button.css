@@ -1,5 +1,5 @@
 button,
-[button] {
+[data-button] {
   font-family: var(--button-font-family);
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
@@ -22,108 +22,108 @@ button,
 }
 
 button:hover,
-[button]:hover {
+[data-button]:hover {
   color: var(--button-color, white);
   background-image: linear-gradient(var(--darken), var(--darken));
   text-decoration: none;
 }
 
 button:active,
-[button]:active {
+[data-button]:active {
   background-image: linear-gradient(var(--lighten), var(--lighten));
 }
 
 button:focus,
-[button]:focus {
+[data-button]:focus {
   outline: none;
   box-shadow: var(--button-focus);
 }
 
 button:disabled,
-[button][disabled] {
+[data-button][data-disabled] {
   opacity: 0.2;
   text-decoration: none;
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-button[type*='outline'],
-[button][type*='outline'] {
+button[data-type*='outline'],
+[data-button][data-type*='outline'] {
   border-color: var(--border, var(--component-primary));
   background-color: transparent;
   color: var(--color, var(--link-color));
 }
 
-button[type*='outline']:hover,
-[button][type*='outline']:hover,
-button[type*='outline']:focus,
-[button][type*='outline']:focus {
+button[data-type*='outline']:hover,
+[data-button][data-type*='outline']:hover,
+button[data-type*='outline']:focus,
+[data-button][data-type*='outline']:focus {
   background-image: none;
   text-decoration: var(--link-text-decoration-hover);
 }
 
-button[type*='link'],
-[button][type*='link'] {
+button[data-type*='link'],
+[data-button][data-type*='link'] {
   border-color: transparent;
   background-color: transparent;
   color: var(--color, var(--link-color));
   text-decoration: var(--link-text-decoration);
 }
 
-button[type*='link']:hover,
-[button][type*='link']:hover,
-button[type*='link']:focus,
-[button][type*='link']:focus {
+button[data-type*='link']:hover,
+[data-button][data-type*='link']:hover,
+button[data-type*='link']:focus,
+[data-button][data-type*='link']:focus {
   border-color: transparent;
   background-image: none;
   color: var(--link-color-hover);
   text-decoration: var(--link-text-decoration-hover);
 }
 
-button[type*='primary'],
-[button][type*='primary'] {
+button[data-type*='primary'],
+[data-button][data-type*='primary'] {
   --border: var(--component-primary);
   --bg: var(--component-primary);
   --color: white;
 }
 
-button[type*='secondary'],
-[button][type*='secondary'] {
+button[data-type*='secondary'],
+[data-button][data-type*='secondary'] {
   --border: var(--component-secondary);
   --bg: var(--component-secondary);
   --color: white;
 }
 
-button[type*='success'],
-[button][type*='success'] {
+button[data-type*='success'],
+[data-button][data-type*='success'] {
   --border: var(--component-success);
   --bg: var(--component-success);
   --color: white;
 }
 
-button[type*='info'],
-[button][type*='info'] {
+button[data-type*='info'],
+[data-button][data-type*='info'] {
   --border: var(--component-info);
   --bg: var(--component-info);
   --color: white;
 }
 
-button[type*='warning'],
-[button][type*='warning'] {
+button[data-type*='warning'],
+[data-button][data-type*='warning'] {
   --border: var(--component-warning);
   --bg: var(--component-warning);
   --color: white;
 }
 
-button[type*='danger'],
-[button][type*='danger'] {
+button[data-type*='danger'],
+[data-button][data-type*='danger'] {
   --border: var(--component-danger);
   --bg: var(--component-danger);
   --color: white;
 }
 
-button[type*='disabled'],
-[button][type*='disabled'] {
+button[data-type*='disabled'],
+[data-button][data-type*='disabled'] {
   --border: var(--component-disabled);
   --bg: var(--component-disabled);
   --color: white;

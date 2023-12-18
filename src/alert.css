@@ -1,4 +1,4 @@
-[alert] {
+[data-alert] {
   color: var(--alert-color, black);
   background-color: var(--bg, var(--component-primary));
   border-radius: var(--alert-border-radius);
@@ -9,19 +9,19 @@
   display: block;
 }
 
-[alert]:empty {
+[data-alert]:empty {
   display: none;
 }
 
-a[alert] {
+a[data-alert] {
   color: var(--alert-color, black);
   display: inline-block;
 }
 
-[alert][type="primary"] { --bg: var(--component-primary); }
-[alert][type="secondary"] { --bg: var(--component-secondary); }
-[alert][type="success"] { --bg: var(--component-success); }
-[alert][type="info"] { --bg: var(--component-info); }
-[alert][type="warning"] { --bg: var(--component-warning); }
-[alert][type="danger"] { --bg: var(--component-danger); }
-[alert][type="disabled"] { --bg: var(--component-disabled); }
+[data-alert][data-type="primary"] { --bg: var(--component-primary); }
+[data-alert][data-type="secondary"] { --bg: var(--component-secondary); }
+[data-alert][data-type="success"] { --bg: var(--component-success); }
+[data-alert][data-type="info"] { --bg: var(--component-info); }
+[data-alert][data-type="warning"] { --bg: var(--component-warning); }
+[data-alert][data-type="danger"] { --bg: var(--component-danger); }
+[data-alert][data-type="disabled"] { --bg: var(--component-disabled); }

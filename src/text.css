@@ -27,6 +27,12 @@ b, .b {
   font-weight: var(--font-weight-bold);
 }
 
+blockquote {
+  padding: var(--space-4) var(--space-5);
+  background-color: var(--gray-1);
+  margin: 0 var(--space-7) var(--p-margin-bottom);
+}
+
 code,
 .code {
   font-family: var(--font-monospace);
@@ -34,23 +40,23 @@ code,
   color: var(--color, var(--code-color));
 }
 
-h1,h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6, [data-h1], [data-h2], [data-h3], [data-h4], [data-h5], [data-h6] {
   font-weight: var(--headings-font-weight);
   line-height: var(--headings-line-height);
+  font-family: var(--headings-font-family);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--headings-font-family);
   color: var(--color, var(--headings-color));
   margin-bottom: var(--headings-margin-bottom);
 }
 
-h1, .h1 { font-size: var(--h1);}
-h2, .h2 { font-size: var(--h2);}
-h3, .h3 { font-size: var(--h3);}
-h4, .h4 { font-size: var(--h4);}
-h5, .h5 { font-size: var(--h5);}
-h6, .h6 { font-size: var(--h6);}
+h1, [data-h1] { font-size: var(--h1);}
+h2, [data-h2] { font-size: var(--h2);}
+h3, [data-h3] { font-size: var(--h3);}
+h4, [data-h4] { font-size: var(--h4);}
+h5, [data-h5] { font-size: var(--h5);}
+h6, [data-h6] { font-size: var(--h6);}
 
 hr {
   border: none;
@@ -77,18 +83,18 @@ ul {
   line-height: var(--body-line-height);
 }
 
-[tooltip] {
+[data-tooltip] {
   display: inline-block;
   position: relative;
   border-bottom: 0.0625rem dashed var(--component-border-color);
   cursor: grab;
 }
 
-[tooltip]:hover > [tip] {
+[data-tooltip]:hover > [data-tip] {
   display: block;
 }
 
-[tooltip] [tip] {
+[data-tooltip] [data-tip] {
   display: none;
   position: absolute;
   bottom: 125%;

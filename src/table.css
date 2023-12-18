@@ -25,21 +25,21 @@ table td {
   padding: var(--table-spacing-y) var(--table-spacing-x);
 }
 
-table[type*='bordered'] {
+table[data-type*='bordered'] {
   border: solid var(--table-border-width) var(--table-border-color);
 }
 
-table[type*='bordered'] td {
+table[data-type*='bordered'] td {
   border-style: solid;
   border-width: var(--table-border-width);
   border-color: var(--border, var(--table-border-color));
 }
 
-table[type*='hover'] tr:hover td {
+table[data-type*='hover'] tr:hover td {
   color: var(--table-hover-color);
   background-color: var(--table-hover-bg-color, var(--component-primary));
 }
 
-table[type*='striped'] tr:nth-child(odd) td {
+table[data-type*='striped'] tr:nth-child(odd) td {
   background-color: var(--table-stripe-bg-color);
 }

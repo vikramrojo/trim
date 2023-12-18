@@ -1,5 +1,6 @@
 :root {
   /* Tokens */
+  --space-0: 0rem;
   --space-1: 0.25rem; /* 4px */
   --space-2: 0.5rem; /* 8px */
   --space-3: 0.75rem; /* 12px */
@@ -66,6 +67,24 @@
   --lighten-more: rgba(255, 255, 255, 0.5);
   --shadow: rgba(80, 80, 80, 0.1);
   --shadow-more: rgba(80, 80, 80, 0.5);
+
+  /* Layout */
+  --dimension-1: 12rem;
+  --dimension-2: 16rem;
+  --dimension-3: 20rem;
+  --dimension-4: 24rem;
+  --dimension-5: 28rem;
+  --dimension-6: 32rem;
+  --dimension-7: 40rem;
+  --dimension-8: 48rem;
+  --dimension-9: 56rem;
+  --dimension-10: 64rem;
+  --dimension-11: 72rem;
+  --dimension-12: 80rem;
+  
+  --body-margin: initial;
+  --content-margin: var(--space-0);
+  --content-width: var(--dimension-12);
 
   /* Components */
   --component-bg-color: var(--gray-1);
